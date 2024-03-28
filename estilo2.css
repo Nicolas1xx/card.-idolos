@@ -1,0 +1,172 @@
+* {
+    font-family: Segoe UI;
+}
+
+
+h1{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    background-color: #444;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    min-height: 100vh;
+}
+
+.card {
+    margin: 30px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+}
+
+.card:hover {
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.maradona .img {
+    background-image: url('https://classic.exame.com/wp-content/uploads/2020/11/maradona-2-1.jpg?quality=70&strip=info&w=1024z');
+}
+
+.pele .img {
+    background-image: url('https://www.jornalopcao.com.br/assets/2020/09/Pel%C3%A9-222.jpg');
+}
+
+.messi .img {
+    background-image: url('https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-1450146852_a7a9c9ff.webp&width=1024&height=683');
+}
+
+.cristiano-ronaldo .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-962792890_05cc9490.webp&width=1024&height=683);
+}
+
+.cruyff .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-1630802-1_734823da.webp&width=672&height=423);
+}
+
+.zidane .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-1523673_a0096268.webp&width=1024&height=696);
+}
+
+.ronaldo .img {
+    background-image: url(https://terceirotempo.uol.com.br/imagens/57/70/w500_h140_qfl_fto_15770.webp);
+}
+
+.beckenbauer .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-1630885-1_e63d4fa0.webp&width=696&height=588);
+}
+
+.platini .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_GettyImages-1636328-1_bc8fc2cd.webp&width=1024&height=664);
+}
+
+.puskas .img {
+    background-image: url(https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20240325_BBR_424931_gettyimages-692406245.jpg_855634365_13e30b49.webp&width=600&height=396);
+}
+
+.neymar .img {
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2023/07/10150428/neymar-barcelona-psg-descarta-motivos.jpg);
+}
+
+.ronaldinho .img {
+    background-image: url(https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt0e5fab5cc44767e0/60deacc421d15821fe7bcbad/e2b7206cf38259fa5b4b340816691b6b8630c6dd.jpg?auto=webp&format=pjpg&width=3840&quality=60);
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
